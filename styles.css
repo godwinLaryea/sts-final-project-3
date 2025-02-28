@@ -7,7 +7,6 @@
   font-size: 16px;
   text-decoration: none;
   font-family: "Comfortaa", serif;
-  ;
 }
 
 body {
@@ -33,14 +32,14 @@ nav {
   width: 100%;
 }
 
-nav h1{
+nav h1 {
   font-size: 1.3rem;
   padding-right: 25.5em;
   cursor: pointer;
   transition: font-size 0.3s;
 }
 
-nav h1:hover{
+nav h1:hover {
   font-size: 1.4rem;
 }
 
@@ -117,7 +116,7 @@ nav ul a:hover {
   z-index: -1;
 }
 
-.btn{
+.btn {
   width: 4rem;
   padding: 0.5rem 1.5rem;
   border-radius: .4969rem;
@@ -127,19 +126,18 @@ nav ul a:hover {
   transition: all 0.3s;
 }
 
-#btn-1:hover{
+#btn-1:hover {
   background-color: #ffff;
   border: 1px solid lightgray;
   color: #FDC435;
 }
 
-#btn-2{
+#btn-2 {
   background-color: white;
   border: 1px solid lightgray;
 }
 
-#btn-2:hover{
+#btn-2:hover {
   background-color: #FDC435;
   color: white;
 }
-
