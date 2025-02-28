@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Comfortaa", serif;
+  ;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 90rem;
+  height: 45.875rem;
+  margin: auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 3.5rem;
+  max-width: 90rem;
+  position: relative;
+  width: 100%;
+}
+
+nav h1{
+  font-size: 1.3rem;
+  padding-right: 25.5em;
+  cursor: pointer;
+  transition: font-size 0.3s;
+}
+
+nav h1:hover{
+  font-size: 1.4rem;
+}
+
+nav ul a {
+  padding-left: 2.5rem;
+  color: black;
+  font-family: "Raleway", serif;
+  transition: all 0.3s;
+}
+
+nav ul a:hover {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90rem;
+  max-width: 100%;
+  height: 39rem;
+}
+
+.info-section {
+  width: 45rem;
+  max-width: 100%;
+  height: 100%;
+}
+
+.info-det {
+  width: 26.125rem;
+  max-width: 100%;
+  height: 22.875rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.info-det .fnt-dev {
+  color: #FDC435;
+  font-weight: 700;
+}
+
+.info-det h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 43.75rem;
+  line-height: 1.4;
+}
+
+.info-det p {
+  font-family: "Nunito", serif;
+  font-size: 1.2rem;
+  color: #828282;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.image img {
+  padding-bottom: 4rem;
+  width: 50rem;
+  height: 39.7rem;
+  object-fit: contain;
+}
+
+.yellow-bg {
+  height: 40rem;
+  position: absolute;
+  right: 2rem;
+  top: 0rem;
+  z-index: -1;
+}
+
+.btn{
+  width: 4rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: .4969rem;
+  background-color: #FDC435;
+  color: black;
+  font-family: "Roboto", serif;
+  transition: all 0.3s;
+}
+
+#btn-1:hover{
+  background-color: #ffff;
+  border: 1px solid lightgray;
+  color: #FDC435;
+}
+
+#btn-2{
+  background-color: white;
+  border: 1px solid lightgray;
+}
+
+#btn-2:hover{
+  background-color: #FDC435;
+  color: white;
+}
+
