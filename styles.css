@@ -4,132 +4,149 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 16px;
-  text-decoration: none;
   font-family: "Comfortaa", serif;
 }
 
+a{
+  text-decoration: none;
+}
+
 body {
-  width: 100dvw;
   height: 100dvh;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 90rem;
-  height: 45.875rem;
-  margin: auto;
+  width: min(100%, 90rem);
+  margin-inline: auto;
+  padding: 1rem;
 }
 
 nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 3.5rem;
-  max-width: 90rem;
-  width: 100%;
+  border-bottom: 1px solid lightgray;
 }
 
 nav h1 {
-  font-size: 1.3rem;
-  padding-right: 25.5em;
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
   cursor: pointer;
-  transition: font-size 0.3s;
+  transition: scale 0.3s;
 }
 
 nav h1:hover {
-  font-size: 1.4rem;
+  scale: 1.1;
+}
+
+nav ul {
+  display: flex;
+  gap: 2.5rem;
+  margin-right: 2rem;
+  transition: scale 0.3s;
+}
+
+nav ul:hover{
+  scale: 1.1;
 }
 
 nav ul a {
-  padding-left: 2.5rem;
   color: black;
   font-family: "Raleway", serif;
-  transition: all 0.3s;
 }
 
 nav ul a:hover {
-  font-size: 1.3rem;
   font-weight: 700;
 }
 
 .hero {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: space-between;
-  width: 90rem;
-  max-width: 100%;
-  height: 39rem;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .hero{
+    flex-direction: row;
+    gap: 3rem;
+  }
 }
 
 .info-section {
-  width: 45rem;
-  max-width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-det {
-  width: 26.125rem;
-  max-width: 100%;
-  height: 22.875rem;
-  margin: auto;
+  width: min(100%, 45rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 1.5rem;
+  align-items: center;
+  gap: 2rem;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width:48rem ){
+  .info-det {
+    align-items: start;
+  }
 }
 
 .info-det .fnt-dev {
   color: #FDC435;
   font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (min-width:48rem ){
+  .info-det .fnt-dev {
+    text-align: left;
+  }
 }
 
 .info-det h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: 43.75rem;
   line-height: 1.4;
+  font-family: "Playfair Display", serif;
 }
 
 .info-det p {
   font-family: "Nunito", serif;
   font-size: 1.2rem;
   color: #828282;
+  width: 80%;
 }
 
 .image {
-  max-width: 100%;
-  position: relative;
-  top: -3.5rem;
+  background-image: url(./images/yellow-bg.png);
+  background-size: cover;
+  width: min(100%, 90rem);
 }
 
-.image img {
-  width: 50rem;
-  height: 39.7rem;
-  object-fit: contain;
-}
-
-.yellow-bg {
-  position: absolute;
-  z-index: -1;
+.image >img{
+  width: 100%;
 }
 
 .btn {
-  width: 4rem;
-  padding: 0.5rem 1.5rem;
-  border-radius: .4969rem;
   background-color: #FDC435;
   color: black;
   font-family: "Roboto", serif;
+  border-radius: .5rem;
+  padding: 0.5rem 1.5rem;
+  width: 4rem;
   transition: all 0.3s;
 }
 
 #btn-1:hover {
   background-color: #ffff;
-  border: 1px solid lightgray;
   color: #FDC435;
+  border: 1px solid lightgray;
 }
 
 #btn-2 {
